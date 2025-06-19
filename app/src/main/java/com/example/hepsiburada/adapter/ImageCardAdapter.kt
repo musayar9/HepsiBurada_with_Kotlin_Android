@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.hepsiburada.data.entity.ImageCard
 import com.example.hepsiburada.databinding.CardDesignBinding
 
-class ImageCardAdapter(var mContext:Context, var imageList:List<ImageCard>):RecyclerView.Adapter<ImageCardAdapter.ImageDesignHolder>() {
+class ImageCardAdapter(var mContext:Context, var imageList:List<ImageCard>)
+    :RecyclerView.Adapter<ImageCardAdapter.ImageDesignHolder>() {
 
 
     inner class ImageDesignHolder(var binding:CardDesignBinding):RecyclerView.ViewHolder(binding.root)

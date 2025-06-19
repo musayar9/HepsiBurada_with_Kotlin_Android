@@ -2,23 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewToDo"
-        android:layout_width="280dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="2dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- CardView içinde her şeyi saran ConstraintLayout -->
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:padding="12dp">
@@ -27,33 +34,50 @@
 
             <!-- Başlık / Açıklama -->
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageViewToDo"
+                android:id="@+id/productImage"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
-
-
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/gray50"
                 android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/stanley" />
+                app:shapeAppearanceOverlay="@style/productImage"
+                app:srcCompat="@drawable/stanley1" />
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/like_full_corner_bg"
+                android:elevation="2dp"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="4dp"
+             android:src="@drawable/baseline_favorite_border_24"
+
+                app:layout_constraintEnd_toEndOf="@+id/productImage"
+                app:layout_constraintTop_toTopOf="@+id/productImage" />
 
             <TextView
-                android:id="@+id/textViewName"
+                android:id="@+id/textProductName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="Stanley The Aerolight Transit Termos Bardak 0.35 TL"
                 android:textColor="#000"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lines="2"
 
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewToDo" />
+                app:layout_constraintTop_toBottomOf="@id/productImage" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -63,16 +87,18 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewName">
+                app:layout_constraintTop_toBottomOf="@+id/textProductName">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/productStart"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
+
                     android:contentDescription="rating star"
                     android:src="@drawable/star_icon" />
 
                 <TextView
+                    android:id="@+id/productRating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
@@ -81,6 +107,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/productComment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -90,7 +117,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/productInstallment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -105,34 +132,36 @@
 
             <LinearLayout
                 android:id="@+id/linearLayoutPrice"
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
+                android:layout_width="178dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="80dp"
                 android:background="@drawable/price_content_field"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingHorizontal="6dp"
+                android:paddingHorizontal="12dp"
                 android:paddingVertical="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-              >
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
                 <TextView
-                    android:layout_width="180dp"
+                    android:id="@+id/productPrice"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="990 TL"
-                    android:textColor="#666"
-                    android:paddingStart="12dp"
-                    android:textSize="16sp" />
+                    android:layout_weight="1"
+                    android:paddingStart="4dp"
+                    android:text="1.084,30 TL"
+                    android:textColor="#111"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="18dp"
+                    android:id="@+id/productShop"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="add to cart"
                     android:src="@drawable/add_shopping_cart" />
             </LinearLayout>
 
