@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HepsiBurada</string>
+    <string name="homepage">Home</string>
+    <string name="listelerim">Listelerim</string>
+    <string name="basketText">Sepetim</string>
+    <string name="accountName">Hesabım</string>
+    <string name="categroies">Kategoriler</string>
 </resources>
