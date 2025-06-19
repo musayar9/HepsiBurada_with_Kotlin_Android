@@ -486,7 +486,7 @@ android:layout_marginBottom="20dp"
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/favorite" />
+                        app:srcCompat="@drawable/favorite1" />
 
                     <TextView
                         android:id="@+id/listelerim"
@@ -496,7 +496,7 @@ android:layout_marginBottom="20dp"
                         android:text="@string/listelerim"
                         android:textAlignment="center"
                         android:textSize="12sp"
-                        android:textColor="@color/gray100" />
+                        android:textColor="@color/gray150" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -510,7 +510,7 @@ android:layout_marginBottom="20dp"
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/shopping_cart" />
+                        app:srcCompat="@drawable/shoppingcarts" />
 
                     <TextView
                         android:id="@+id/basketText"
@@ -520,7 +520,7 @@ android:layout_marginBottom="20dp"
                         android:text="@string/basketText"
                         android:textAlignment="center"
                         android:textSize="12sp"
-                        android:textColor="@color/gray100" />
+                        android:textColor="@color/gray150" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -535,7 +535,7 @@ android:layout_marginBottom="20dp"
                         android:layout_height="22dp"
                         android:layout_gravity="center"
 
-                        app:srcCompat="@drawable/person" />
+                        app:srcCompat="@drawable/person1" />
 
                     <TextView
                         android:id="@+id/accountText"
@@ -545,7 +545,7 @@ android:layout_marginBottom="20dp"
                         android:text="@string/accountName"
                         android:textAlignment="center"
                         android:textSize="12sp"
-                        android:textColor="@color/gray100" />
+                        android:textColor="@color/gray150" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -570,7 +570,7 @@ android:layout_marginBottom="20dp"
                         android:text="@string/categroies"
                         android:textSize="12sp"
                         android:textAlignment="center"
-                        android:textColor="@color/gray100" />
+                        android:textColor="@color/gray150" />
                 </LinearLayout>
 
             </LinearLayout>
