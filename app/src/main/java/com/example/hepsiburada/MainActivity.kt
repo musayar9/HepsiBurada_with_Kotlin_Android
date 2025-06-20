@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // ✅ binding'i initialize et
+
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-        // ✅ önce initialize, sonra kullan!
+
         setContentView(binding.root)
 
         imageList = arrayListOf(

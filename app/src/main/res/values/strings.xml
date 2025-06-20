@@ -5,4 +5,19 @@
     <string name="basketText">Sepetim</string>
     <string name="accountName">Hesabım</string>
     <string name="categroies">Kategoriler</string>
+    <string name="search_placeholder">Ürün, kategori veya marka ara</string>
+    <string name="location">Konum</string>
+    <string name="please_location">Lütfen Ko...</string>
+    <string name="premium">PREMIUM</string>
+    <string name="gift_member">Hediye Max üyeliği</string>
+    <string name="hepsi">hepsi</string>
+    <string name="pay">pay</string>
+    <string name="win">Her yerde %3 kazan</string>
+    <string name="popular">Popüler ürünlerden seçtik</string>
+    <string name="add_tocart">Tümü</string>
+    <string name="product_name">Stanley The Aerolight Transit Termos Bardak 0.35 TL</string>
+    <string name="installment">Peşin Fiyatına 3 taksit</string>
+    <string name="evaluation">(4767)</string>
+    <string name="rate">4,6</string>
+    <string name="price">1.084,30 TL</string>
 </resources>
